@@ -18,8 +18,11 @@ int main(string[] args) {
         if (arg == "--multiline") {
             linenoiseSetMultiLine(1);
             writeln("Multi-line mode enabled.");
+        } else if (arg == "--keycodes") {
+            linenoisePrintKeyCodes();
+            return 0;
         } else {
-            stderr.writefln("Usage: %s [--multiline]", prgname);
+            stderr.writefln("Usage: %s [--multiline] [--keycodes]", prgname);
             return 1;
         }
     }

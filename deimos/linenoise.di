@@ -53,3 +53,4 @@ int linenoiseHistorySave(const char *filename);
 int linenoiseHistoryLoad(const char *filename);
 void linenoiseClearScreen();
 void linenoiseSetMultiLine(int ml);
+void linenoisePrintKeyCodes();
