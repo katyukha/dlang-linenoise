@@ -11,7 +11,7 @@ configuration "lib" {
 }
 configuration "vendored" {
     targetType "sourceLibrary"
-    preBuildCommands "cd $PACKAGE_DIR; [ -f C/linenoise.o ] || cc -c -fPIC -o C/linenoise.o C/linenoise.c" platform="posix"
+    preBuildCommands "cd $LINENOISE_PACKAGE_DIR; [ -f C/linenoise.o ] || cc -c -fPIC -o C/linenoise.o C/linenoise.c" platform="posix"
     sourceFiles "C/linenoise.o" platform="posix"
 }
 configuration "example" {
